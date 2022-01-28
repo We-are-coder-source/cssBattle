@@ -1,0 +1,67 @@
+<div class="absolute-center">
+  <div class="flex">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+  <div class="absolute-center flex">
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background: #6592cf;
+  }
+  .absolute-center {
+    position: absolute;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .flex {
+    display: flex;
+  }
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: #243d83;
+  }
+  .circle:not(:first-of-type) {
+    margin-left: 26px;
+  }
+  .line {
+    position: relative;
+    width: 50px;
+    height: 40px;
+    background: #243d83;
+  }
+  .line:not(:first-of-type) {
+    margin-left: 176px;
+  }
+  .line:before {
+    content: "";
+    position: absolute;
+    width: 31.5px;
+    height: 31.5px;
+    border-radius: 100%;
+    background: #6592cf;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -41.5px);
+  }
+  .line:after {
+    content: "";
+    position: absolute;
+    width: 31.5px;
+    height: 31.5px;
+    border-radius: 100%;
+    background: #6592cf;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10px);
+  }
+</style>
