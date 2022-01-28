@@ -1,0 +1,34 @@
+<div class="circle circle-1"></div>
+<div class="circle circle-2"></div>
+<div class="circle circle-3"></div>
+<style>
+  body {
+    margin: 0;
+    background: #f3ac3c;
+  }
+  .circle {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, var(--y));
+    width: var(--size);
+    height: var(--size);
+    border-radius: 100%;
+  }
+  .circle-1 {
+    --y: -250px;
+    --size: 400px;
+    background: #998235;
+  }
+  .circle-2 {
+    --y: 25px;
+    --size: 250px;
+    box-sizing: border-box;
+    border: 25px solid #f3ac3c;
+    background: #1a4341;
+  }
+  .circle-3 {
+    --y: 150px;
+    --size: 400px;
+    background: #998235;
+  }
+</style>
