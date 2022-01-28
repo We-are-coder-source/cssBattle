@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="circle"></div>
+  <div class="line-container">
+    <div class="line">
+      <div class="line-1"></div>
+      <div class="line-2"></div>
+      <div class="line-3"></div>
+    </div>
+    <div class="line">
+      <div class="line-1"></div>
+      <div class="line-2"></div>
+      <div class="line-3"></div>
+    </div>
+    <div class="line">
+      <div class="line-1"></div>
+      <div class="line-2"></div>
+      <div class="line-3"></div>
+    </div>
+  </div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background: #4f77ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 200px;
+    height: 200px;
+    background: #191919;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: #f9e492;
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+  .line-container {
+    margin-top: 42px;
+  }
+  .line-container > .line:not(:first-child) {
+    margin-top: 10px;
+  }
+  .line {
+    display: flex;
+  }
+  .line-1 {
+    width: 100px;
+    height: 16px;
+    background: #f9e492;
+    flex-shrink: 0;
+  }
+  .line-2 {
+    width: 20px;
+    height: 16px;
+    background: #d6b73f;
+    transform: skewY(-33deg) translateY(-6.5px);
+    flex-shrink: 0;
+  }
+  .line-3 {
+    width: 100px;
+    height: 16px;
+    background: #f9e492;
+    transform: translateY(-13px);
+    flex-shrink: 0;
+  }
+</style>
