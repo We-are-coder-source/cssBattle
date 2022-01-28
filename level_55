@@ -1,1 +1,1 @@
-# Rishi
+<a style='--i:0;'></a><a style='--i:1;'></a><a style='--i:2;'></a><a style='--i:3;'></a><style>a{position:absolute;top:calc(50% - 50px);left:calc(50% - 100px);width: 100px;height: 50px;background: #F9E492;border-radius:50px 50px 0 0;transform-origin:bottom right;transform:rotate(calc(90deg * var(--i)))}a:nth-child(even){background:#4F77FF}*{background:#191919}</style>
