@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="square square-1"></div>
+  <div class="square square-2"></div>
+  <div class="square square-3"></div>
+</div>
+<style>
+  body {
+    background: #f3ac3c;
+  }
+  .container {
+    height: 100%;
+    margin-left: -5px;
+    transform: rotate(45deg);
+  }
+  .square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .square-1 {
+    width: 160px;
+    height: 160px;
+    background: #998235;
+  }
+  .square-2 {
+    width: 100px;
+    height: 100px;
+    background: #f3ac3c;
+  }
+  .square-2:before,
+  .square-2:after {
+    content: "";
+    position: absolute;
+    background: #f3ac3c;
+  }
+  .square-2:before {
+    width: 60px;
+    height: 30px;
+    top: 50%;
+    transform: translate(-75%, -50%);
+  }
+  .square-2:after {
+    width: 30px;
+    height: 60px;
+    left: 50%;
+    transform: translate(-50%, -75%);
+  }
+  .square-3 {
+    width: 30px;
+    height: 30px;
+    background: #1a4341;
+  }
+</style>
