@@ -1,0 +1,66 @@
+<div class="circles">
+  <div c1></div>
+  <div c2></div>
+  <div c3></div>
+  <div c4></div>
+  <div c5></div>
+  <div c6></div>
+  <div c7></div>
+  <div c8></div>
+  <div c9></div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background: #0e2e2c;
+  }
+  .circles {
+    height: 100vh;
+  }
+  .circles > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    width: var(--size);
+    height: var(--size);
+    background: var(--color);
+  }
+  [c1] {
+    --size: 200px;
+    --color: #f3ac3c;
+  }
+  [c2] {
+    --size: 188px;
+    --color: #0e2e2c;
+  }
+  [c3] {
+    --size: 160px;
+    --color: #f3ac3c;
+  }
+  [c4] {
+    --size: 144px;
+    --color: #0e2e2c;
+  }
+  [c5] {
+    --size: 120px;
+    --color: #998235;
+  }
+  [c6] {
+    --size: 100px;
+    --color: #0e2e2c;
+  }
+  [c7] {
+    --size: 80px;
+    --color: #f3ac3c;
+  }
+  [c8] {
+    --size: 56px;
+    --color: #0e2e2c;
+  }
+  [c9] {
+    --size: 40px;
+    --color: #f3ac3c;
+  }
+</style>
