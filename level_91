@@ -1,0 +1,44 @@
+<div class="rect"></div>
+<div class="circle"></div>
+<div class="ceils">
+  <div class="ceil"></div>
+  <div class="ceil"></div>
+  <div class="ceil"></div>
+  <div class="ceil"></div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background: #d25b70;
+  }
+  .rect {
+    width: 100%;
+    height: 50%;
+    background: #6cb3a9;
+    position: absolute;
+    top: 50%;
+  }
+  .ceils {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+  }
+  .ceils > :not(:first-child) {
+    margin-top: 10px;
+  }
+  .ceil {
+    height: 15px;
+    background: #6cb3a9;
+  }
+  .circle {
+    background: #f6df96;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+  }
+</style>
