@@ -1,0 +1,29 @@
+<style>
+  body {
+    background: radial-gradient(
+        100px circle at center,
+        transparent 100px,
+        #243d83
+      ), radial-gradient(
+        85px circle at 125px 50%,
+        transparent 65px,
+        #243d83 0 85px,
+        transparent
+      ), radial-gradient(
+        85px circle at 50% 75px,
+        transparent 65px,
+        #243d83 0 85px,
+        transparent
+      ), radial-gradient(
+        85px circle at 275px 50%,
+        transparent 65px,
+        #243d83 0 85px,
+        transparent
+      ), radial-gradient(
+        85px circle at 50% 225px,
+        transparent 65px,
+        #243d83 0 85px,
+        transparent
+      ), linear-gradient(to right, #6592cf, #6592cf);
+  }
+</style>
